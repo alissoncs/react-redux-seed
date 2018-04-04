@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import Options from '../components/Options/index.jsx';
+import Options from '../components/Options/index';
 import { selectSubreddit, addSubreddit, fetchPosts } from '../actions';
 
 

@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --mode development --config development.js --hot --colors",
-    "test": "./node_modules/mocha/bin/mocha src/**/*.spec.js --require ./test/helpers.js --require babel-register --recursive",
+    "test": "./node_modules/mocha/bin/mocha test/**/*.js --require babel-register --recursive",
     "test:watch": "npm test -- --watch",
     "build": "webpack -p --env.production --mode production --config build.js --colors",
     "build:test": "webpack -p --env.production --mode production --config test.js --colors",
@@ -37,6 +37,7 @@
     "eslint-loader": "^2.0.0",
     "eslint-plugin-import": "^2.10.0",
     "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-mocha": "^5.0.0",
     "eslint-plugin-react": "^7.7.0",
     "extract-text-webpack-plugin": "^4.0.0-beta.0",
     "file-loader": "^1.1.11",

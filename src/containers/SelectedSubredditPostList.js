@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import PostList from '../components/PostList/index.jsx';
+import PostList from '../components/PostList/index';
 
 function getPostsBySubreddit(selectedSubreddit, postsBySubreddit) {
   return postsBySubreddit[selectedSubreddit];

@@ -13,24 +13,26 @@
   "plugins": [
     "react",
     "import",
+    "mocha",
     "jsx-a11y"
   ],
   "env": {
     "es6": true,
     "node": true,
-    "browser": true
+    "browser": true,
+    "mocha": true
   },
   "rules": {
     "max-params": ["error", 3],
     "no-confusing-arrow": 0,
     "arrow-body-style": 0,
-    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
     "react/prop-types": 2,
     "react/forbid-prop-types": 0,
     "react/prefer-stateless-function": 1,
     "jsx-a11y/no-static-element-interactions": 1,
     "linebreak-style": 0,
     "react/jsx-uses-react": "error",
-    "react/jsx-uses-vars": "error"
+    "react/jsx-uses-vars": "error",
+    "mocha/no-exclusive-tests": "error"
   }
 }
